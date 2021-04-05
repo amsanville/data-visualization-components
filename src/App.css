@@ -1,0 +1,32 @@
+:root{
+  /* Define a palette */
+  --color-primary: #545F66;
+  --color-secondary: #829399;
+  --color-text: #D0F4EA;
+  --color-background-primary: #E8FCC2;
+  --color-background-secondary: #B1CC74;
+}
+
+body{
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* Grid/Flex Classes */
+.DataVis{
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: 230px auto;
+
+  height: 100vh;
+
+  /* Container colors unless overwritten */
+  color: var(--color-text);
+  background-color: var(--color-secondary);
+}
+
+/* Chosen for when the buttons wrap - note, this is a pain in the ass to maintain. Also, note the screen sizes are right as long as the buttons don't change styling. Or positioning. */
+/* Is there a better way? Probably with JS */
+@media screen and (max-width: 1861px) { .DataVis { grid-template-rows: 250px auto; } }
+@media screen and (max-width: 972px) { .DataVis { grid-template-rows: 270px auto; } }
+@media screen and (max-width: 639px) { .DataVis { grid-template-rows: 290px auto; } }
+@media screen and (max-width: 527px) { .DataVis { grid-template-rows: 310px auto; } }

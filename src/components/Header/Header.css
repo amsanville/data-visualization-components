@@ -1,0 +1,15 @@
+@import "../../App.css";
+
+.DataVis-header{
+  grid-row: 1;
+  grid-column: 1 /span 3;
+  background-color: var(--color-primary);
+  padding-left: 10%;
+}
+
+.DataVis-header-buttonbar{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+}

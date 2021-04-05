@@ -1,0 +1,12 @@
+@import "../../App.css";
+
+.DataVis-title-buttonbar-button{
+    width: 50px;
+    color: var(--color-background-secondary);
+    background-color: var(--color-background-primary);
+}
+  
+.DataVis-title-buttonbar-button--toggle{
+    color: var(--color-background-primary);
+    background-color: var(--color-background-secondary);
+}

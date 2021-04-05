@@ -1,0 +1,21 @@
+@import "../../App.css";
+
+.DataVis-graph-bar{
+    padding: 7px;
+    margin: 5px;
+    color: var(--color-background-secondary);
+    background-color: var(--color-background-primary);
+  
+    transition: box-shadow 0.3s;
+  
+    min-height: 10%;
+  }
+  
+  .DataVis-graph-bar:nth-of-type(even){
+    color: var(--color-background-primary);
+    background-color: var(--color-background-secondary);
+  }
+  
+  .DataVis-graph-bar:hover{
+    box-shadow: 5px 5px var(--color-text);
+  }

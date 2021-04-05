@@ -1,0 +1,16 @@
+@import "../../App.css";
+
+.DataVis-graph{
+    grid-row: 2;
+    grid-column: 2;
+  
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+
+
