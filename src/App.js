@@ -34,9 +34,9 @@ function App() {
           let count = 0;
           for(let country of Object.keys(data.rates).sort()){
             if(initCountries.includes(country)){
-              tempToggleButtons.push({id: count, text: country, toggled: true, value: data[country.name], height: '100%'});
+              tempToggleButtons.push({id: count, text: country, toggled: true, value: data.rates[country], height: '100%'});
             } else {
-              tempToggleButtons.push({id: count, text: country, toggled: false, value: data[country.name], height: '100%'});
+              tempToggleButtons.push({id: count, text: country, toggled: false, value: data.rates[country], height: '100%'});
             }
             count++;
           }
@@ -103,6 +103,11 @@ function App() {
           allCountries[data.base] = 1.0;
 
           // Update the states
+          let tempToggleButtons = toggleButtons;
+          for(const button of tempToggleButtons){
+            button.value = data.rates[button.text];
+          }
+          setToggleButtons(tempToggleButtons);
           setData(allCountries);
           setCountrySelect(data.base);
         });
